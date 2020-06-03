@@ -1,0 +1,2 @@
+# flutter_plugin_facebook_analytics
+facebook_analytics sdk
