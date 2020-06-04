@@ -1,16 +1,42 @@
-# facebook_analytics_example
+# Facebook analytics Flutter SDK 
 
-Demonstrates how to use the facebook_analytics plugin.
+# author
 
-## Getting Started
+zhaolong<zhaoyuen123@126.com>
 
-This project is a starting point for a Flutter application.
+# Integration Steps
 
-A few resources to get you started if this is your first Flutter project:
+## Step 1: Add Dependency
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```yaml
+  facebook_analytics: 0.0.1
+```
+
+<br/>
+
+## Step 2: Add permissions (Android)
+
+The Cashfree PG SDK requires that you add the INTERNET permission in your `Android Manifest` file.
+
+```xml
+<manifest ...>
+    <uses-permission android:name="android.permission.INTERNET" />
+<application ...>
+```
+
+## example
+
+```dart
+    final FacebookAnalytics _facebookAnalytics = FacebookAnalytics();
+    _facebookAnalytics.init(isDebugEnabled: true, autoLogAppEventsEnabled: true);
+
+    _facebookAnalytics.logEvent("test");
+
+    _facebookAnalytics.logEvent("test2", parameters:{'a':'a', 'b':'b'});
+
+    _facebookAnalytics.logEvent("test3", valueToSum: 0.6);
+``` 
+## doc
+  analytics of the form to:
+    `https://developers.facebook.com/docs/analytics/`

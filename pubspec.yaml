@@ -1,5 +1,5 @@
 name: facebook_analytics
-description: A new flutter plugin project.
+description: facebook_analytics sdk
 version: 0.0.1
 author:
 homepage:
@@ -29,8 +29,6 @@ flutter:
     platforms:
       android:
         package: com.zm.flutter.plugin.facebook_analytics
-        pluginClass: FacebookAnalyticsPlugin
-      ios:
         pluginClass: FacebookAnalyticsPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
