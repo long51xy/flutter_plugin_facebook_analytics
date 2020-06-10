@@ -17,7 +17,7 @@ zhaolong<zhaoyuen123@126.com>
 
 ## Step 2: Add permissions (Android)
 
-The Cashfree PG SDK requires that you add the INTERNET permission in your `Android Manifest` file.
+The Facebook SDK requires that you add the INTERNET permission in your `Android Manifest` file.
 
 ```xml
 <manifest ...>
