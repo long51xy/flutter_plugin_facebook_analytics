@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:facebook_analytics/facebook_analytics.dart';
+import 'package:flutter_plugin_facebook_analytics/facebook_analytics.dart';
 
 void main() {
   runApp(MyApp());
