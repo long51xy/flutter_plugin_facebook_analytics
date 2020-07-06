@@ -82,12 +82,13 @@ public class FacebookAnalyticsDelegate implements PluginRegistry.ActivityResultL
                     params.putString(key, value);
                 }
             }
-            if (!params.isEmpty()) {
-                logger.logEvent(eventName, params);
-            } else if (!params.isEmpty() && !valueToSum.isNaN()) {
+
+            if (!params.isEmpty() && !valueToSum.isNaN()) {
                 logger.logEvent(eventName, valueToSum, params);
             } else if (!valueToSum.isNaN()) {
                 logger.logEvent(eventName, valueToSum);
+            } else if (!params.isEmpty()) {
+                logger.logEvent(eventName, params);
             } else {
                 logger.logEvent(eventName);
             }
