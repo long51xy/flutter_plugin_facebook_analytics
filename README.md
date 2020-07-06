@@ -10,7 +10,7 @@ zhaolong<zhaoyuen123@126.com>
 
 
 ```yaml
-  flutter_plugin_facebook_analytics: 0.0.1
+  flutter_plugin_facebook_analytics: 0.0.2
 ```
 
 <br/>
